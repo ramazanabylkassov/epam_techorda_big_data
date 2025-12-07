@@ -1,0 +1,75 @@
+# OS
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+.project
+.classpath
+.settings/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Java/Scala
+*.class
+*.jar
+*.war
+*.ear
+target/
+*.log
+
+# Logs
+logs/
+*.log
+*.out
+
+# Docker
+docker-compose.override.yml
+
+# Hadoop/Hive
+metastore_db/
+derby.log
+*.jdo
+
+# Spark
+spark-warehouse/
+
+# Data files (uncomment if needed)
+# *.csv
+# *.parquet
+# *.avro
+# *.orc
+
+# Temp files
+*.tmp
+*.temp
+*.bak
+*~
+
+# Secrets
+*.pem
+*.key
+credentials.json
+secrets.json
