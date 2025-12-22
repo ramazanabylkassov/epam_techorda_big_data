@@ -77,4 +77,5 @@ secrets.json
 
 # Spark
 spark/spark_etl/output/
+spark/spark_etl/input/
 sparl/spark-3.5.7-bin-hadoop3/*
