@@ -18,8 +18,8 @@ restaurants = (
 
 weather = spark.read.parquet("data/input/weather_csv")
 
-restaurants.printSchema()
-weather.printSchema()
+# restaurants.printSchema()
+# weather.printSchema()
 
 invalid_coords = restaurants.filter(
     F.col("lat").isNull() | F.col("lng").isNull()
