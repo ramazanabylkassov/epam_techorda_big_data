@@ -18,6 +18,8 @@ docker exec -it kafka bash
 - **Kafka location:** `/opt/kafka_2.12-2.4.0`
 - **ZooKeeper port:** `2181`
 
+![Task 1 screenshot](assets/screenshots_kafka_task_1.png)
+
 ---
 
 ## Task 2: Creating Kafka Topics
@@ -31,6 +33,8 @@ docker exec -it kafka bash
 ```
 
 **Result:** Topic `kafka-tst-01` created successfully with 1 partition and replication factor 1.
+
+![Task 2 screenshot](assets/screenshots_kafka_task_2.png)
 
 ---
 
@@ -67,6 +71,9 @@ docker exec -it kafka bash
 - Without consumer group: all consumers receive ALL messages
 - With consumer group: round-robin distribution between consumers
 
+![Task 3 screenshot](assets/screenshots_kafka_task_3.png)
+![Task 4 screenshot](assets/screenshots_kafka_task_4.png)
+
 ---
 
 ## Task 5: Kafka Connect - File Source
@@ -90,6 +97,8 @@ topic=kafka-file-topic
 ```
 
 **Result:** Records written to source file were automatically published to Kafka topic. New records consumed in real-time.
+
+![Task 5 screenshot](assets/screenshots_kafka_task_5.png)
 
 ---
 
@@ -122,6 +131,8 @@ topics=kafka-file-sink-topic
 ```
 
 **Result:** Data flows from source file → Kafka topic → destination file in real-time.
+
+![Task 6 screenshot](assets/screenshots_kafka_task_6.png)
 
 ---
 
@@ -167,6 +178,9 @@ curl localhost:8083/connectors/kafka-file-sink-task/config | python -m json.tool
 - After offset reset: all records reprocessed
 - Without offset reset: consumption resumes from last committed offset
 
+![Task 7.1 screenshot](assets/screenshots_kafka_task_7_1.png)
+![Task 7.2 screenshot](assets/screenshots_kafka_task_7_2.png)
+
 ---
 
 ## Task 8: Kafka Connect - JDBC Source (MySQL)
@@ -207,6 +221,8 @@ topic.prefix=mysql-src-
 ```
 
 **Topic created:** `mysql-src-src_events`
+
+![Task 8 screenshot](assets/screenshots_kafka_task_8.png)
 
 **Delete topic:**
 
