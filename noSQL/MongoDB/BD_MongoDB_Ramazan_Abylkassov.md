@@ -1,4 +1,4 @@
-# Kafka Practice - Task Answers
+# MongoDB - Task Answers
 
 > **Repository:** [GitHub - EPAM TechOrda Big Data](https://github.com/ramazanabylkassov/epam_techorda_big_data/blob/main/noSQL/MongoDB/BD_MongoDB_Ramazan_Abylkassov.md)
 
